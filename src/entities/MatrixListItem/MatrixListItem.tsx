@@ -3,7 +3,7 @@ import { MatrixItemProps } from '@/entities/MatrixListItem/types.js'
 import { Card } from 'antd'
 import { useNavigate } from 'react-router-dom'
 
-export const MatrixListItem: FC<MatrixItemProps> = ({ name, description, isLoading }) => {
+export const MatrixListItem: FC<MatrixItemProps> = ({ name, title, description, isLoading }) => {
   const navigate = useNavigate()
   const handleClick = () => {
     navigate(`matrix/${name}`)
@@ -11,7 +11,7 @@ export const MatrixListItem: FC<MatrixItemProps> = ({ name, description, isLoadi
 
   return <>
     <Card style={{ width: 300, marginTop: 16, height: '100%' }} loading={isLoading} hoverable onClick={handleClick}>
-      <Card.Meta title={name} description={description} />
+      <Card.Meta {...{ title, description }} />
     </Card>
   </>
 }
