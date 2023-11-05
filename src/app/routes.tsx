@@ -14,6 +14,10 @@ const routes = [
   {
     path: 'matrix/:name',
     element: <MatrixPage />
+  },
+  {
+    path: '*',
+    element: <Navigate to='/' />
   }
 ]
 

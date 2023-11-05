@@ -48,7 +48,8 @@ const { reducer: matrixReducer} = matrixSlice
 
 export const getMatrices = () => (state: RootState) => state.matrix.entities
 
-export const getMatrixByName = (name: string) => (state: RootState) => state.matrix.entities?.find(m => m.name === name)
+export const getMatrixByName = (name: string) => (state: RootState) =>
+    state.matrix.entities?.find(m => m.name === name) || null
 
 export const getMatrixError = () => (state: RootState) => state.matrix.error
 
