@@ -6,10 +6,10 @@ import { Row, Col, Card } from 'antd'
 export const MatrixList: FC<MatrixListProps> = ({ matrices }) => {
   if (!matrices)
     return <>
-      <Row gutter={16} style={{ maxWidth: '960px' }} align='middle' justify='center'>
+      <Row style={{ maxWidth: '960px' }} align='stretch' justify='center'>
         {new Array(3).fill(0).map((_, key) => (
-          <Col style={{ paddingLeft: '10px', paddingRight: '10px' }} key={key}>
-            <Card style={{ width: 300, marginTop: 16 }} loading={true} hoverable>
+          <Col style={{ margin: '16px 8px 0px' }} key={key}>
+            <Card style={{ width: 300, height: '100%' }} loading={true} hoverable>
               <Card.Meta title={'loading title'} description={'loading description'} />
             </Card>
           </Col>
@@ -18,9 +18,9 @@ export const MatrixList: FC<MatrixListProps> = ({ matrices }) => {
     </>
 
   return <>
-    <Row gutter={16} style={{ maxWidth: '960px', display: 'flex' }} align='stretch' justify='center'>
+    <Row style={{ maxWidth: '960px', display: 'flex' }} align='stretch' justify='center'>
       {matrices.map(m => (
-          <Col style={{ paddingLeft: '10px', paddingRight: '10px' }} key={m.name}>
+          <Col style={{ margin: '16px 8px 0px' }} key={m.name}>
             <MatrixListItem name={m.name} title={m.title} description={m.description} isLoading={!matrices.length} />
           </Col>
       ))}

@@ -10,7 +10,7 @@ const HomePage: FC = () => {
   const matrices: Array<Matrix> | null = useAppSelector(getMatrices())
 
   return (
-    <Space direction="vertical" align="center" style={{ width: '100%', marginTop: '100px' }}>
+    <Space direction="vertical" align="center" className='pageLayout'>
       <img src={Logo} alt='Elepha health' />
       <Typography.Title level={2}>CureSound</Typography.Title>
       <MatrixList matrices={matrices} />

@@ -10,7 +10,7 @@ export const MatrixListItem: FC<MatrixItemProps> = ({ name, title, description, 
   }
 
   return <>
-    <Card style={{ width: 300, marginTop: 16, height: '100%' }} loading={isLoading} hoverable onClick={handleClick}>
+    <Card style={{ width: 300, height: '100%' }} loading={isLoading} hoverable onClick={handleClick}>
       <Card.Meta {...{ title, description }} />
     </Card>
   </>

@@ -45,6 +45,32 @@ table {
   border-spacing: 0;
 }
 
+
+
+.pageLayout {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 948px){
+  .pageLayout {
+    margin-top: 50px;
+  }
+}
+
+
+.skeletonMatrixCard {
+  width: 550px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 590px){
+	.skeletonMatrixCard {
+    width: 300px;
+  }
+}
+
 .playerRepeatImg {
   justify-content: center;
   display: flex;

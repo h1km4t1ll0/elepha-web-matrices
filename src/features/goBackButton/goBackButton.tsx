@@ -12,7 +12,7 @@ export const GoBackButton: FC<GoBackButtonProps> = ({ style }) => {
 
   return (
     <div className='goBackButton' style={style}>
-      <img src={GoBackIcon} alt='Go back' width='25px' height='auto' onClick={handleClick} />
+      <img src={GoBackIcon} alt='Go back' width='22px' height='auto' onClick={handleClick} />
     </div>
   )
 }
