@@ -1,7 +1,7 @@
 import { CSSProperties, FC, useEffect, useRef, useState } from 'react'
 import { AudioPlayerProps } from '@/shared/audioPlayer/types.js'
-import repeatIcon from '@/shared/assets/song-repeat.svg'
-import noRepeatIcon from '@/shared/assets/song-no-repeat.svg'
+import RepeatIcon from '@/shared/assets/song-repeat.svg'
+import NoRepeatIcon from '@/shared/assets/song-no-repeat.svg'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Hls = require('hls.js')
 
@@ -58,7 +58,7 @@ export const AudioPlayer: FC<AudioPlayerProps> = ({ url }) => {
     <audio ref={audio} controls style={{ width: '150%', zIndex: 5 }} loop={true}></audio>
     <div style={repeatContainerStyles}>
       <div className='playerRepeatImg'>
-        <img src={repeat ? noRepeatIcon : repeatIcon} width='auto' height='25px'
+        <img src={repeat ? NoRepeatIcon : RepeatIcon} width='auto' height='25px'
              style={{ marginTop: 5, cursor: 'pointer' }} onClick={() => setRepeat(!repeat)} />
       </div>
     </div>
