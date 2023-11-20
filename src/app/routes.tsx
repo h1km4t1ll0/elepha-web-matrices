@@ -4,12 +4,8 @@ import { MatrixPage } from '@/pages/MatrixPage/MatrixPage.js'
 
 const routes = [
   {
-    path: '',
-    element: <HomePage />,
-  },
-  {
     path: 'matrix',
-    element: <Navigate to='/' />
+    element: <Navigate to='/matrix/rest' />
   },
   {
     path: 'matrix/:name',
@@ -17,7 +13,7 @@ const routes = [
   },
   {
     path: '*',
-    element: <Navigate to='/' />
+    element: <Navigate to='/matrix/rest' />
   }
 ]
 

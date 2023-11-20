@@ -45,25 +45,23 @@ table {
   border-spacing: 0;
 }
 
-
-
 .pageLayout {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 948px){
-  .pageLayout {
-    margin-top: 50px;
+
+.matrixCard {
+  width: 550px;
+}
+
+@media screen and (max-width: 552px){
+  .matrixCard {
+    width: 310px;
   }
 }
 
-
-.skeletonMatrixCard {
-  width: 550px;
-  margin: 0 20px;
-}
 
 @media screen and (max-width: 590px){
 	.skeletonMatrixCard {
@@ -84,20 +82,5 @@ table {
 }
 
 .playerRepeatImg:hover {
-  background-color: #e5e7e8;
-}
-
-.goBackButton {
-  padding: 0 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.2s;
-}
-
-.goBackButton img {
-  margin-top: 7px;
-}
-
-.goBackButton:hover {
   background-color: #e5e7e8;
 }
