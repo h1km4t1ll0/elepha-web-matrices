@@ -27,8 +27,8 @@ export const MatrixPage: FC = () => {
       <div style={{ position: 'relative' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div style={{ maxWidth: '310px' }}>
-            <img src={Logo} alt='Elepha health' />
-            <Typography.Title level={2}>SoundCure</Typography.Title>
+            {/*<img src={Logo} alt='Elepha health' />*/}
+            <Typography.Title level={1}>CureSound</Typography.Title>
           </div>
         </div>
         <Matrix matrix={matrix} />
