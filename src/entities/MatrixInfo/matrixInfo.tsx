@@ -5,6 +5,6 @@ import { MatrixInfoProps } from '@/entities/MatrixInfo/types.js'
 export const MatrixInfo: FC<MatrixInfoProps> = ({ matrix }) => {
 
   return <>
-    <Typography.Title>{matrix.title}</Typography.Title>
+    <Typography.Title level={2}>{matrix.title}</Typography.Title>
   </>
 }
