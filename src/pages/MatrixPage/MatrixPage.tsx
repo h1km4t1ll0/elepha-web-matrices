@@ -40,7 +40,7 @@ export const MatrixPage: FC = () => {
           }}>
             <Typography.Text
                 style={{ fontSize: '23px'}}>
-              Раскройте Ваш потенциал ресурсного состояния
+              Раскройте потенциал ресурсного состояния
             </Typography.Text>
             <Typography.Link
               style={
