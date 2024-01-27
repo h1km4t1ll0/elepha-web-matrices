@@ -4,7 +4,7 @@ import { Space, Typography } from 'antd'
 import { Matrix as MatrixType } from '@/shared/api/types.js'
 import { Matrix } from '@/widgets/Matrix/matrix.js'
 import MatrixApi from '@/shared/api/api.js'
-import Logo from '@/shared/assets/logo.png'
+// import Logo from '@/shared/assets/logo.png'
 
 export const MatrixPage: FC = () => {
   const { name } = useParams()
