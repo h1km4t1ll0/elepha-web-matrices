@@ -39,8 +39,7 @@ export const MatrixPage: FC = () => {
             marginLeft: '40px'
           }}>
             <Typography.Text
-                style={{ fontSize: '26px'}}
-              type="secondary">
+                style={{ fontSize: '23px'}}>
               Раскройте Ваш потенциал ресурсного состояния
             </Typography.Text>
             <Typography.Link
@@ -51,7 +50,7 @@ export const MatrixPage: FC = () => {
                 }
               }
               href="https://www.elephahealth.com/">
-              Wellness - сервис услуг с выездом в отель или на дом
+              Сервис wellness - услуг с выездом в отель или на дом
             </Typography.Link>
           </Space>
         </Space>
