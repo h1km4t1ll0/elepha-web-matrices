@@ -18,16 +18,5 @@ export const Matrix: FC<MatrixProps> = ({ matrix }) => {
       <MatrixInfo matrix={matrix} />
       <AudioPlayer url={matrix.audioUrl} />
     </Card>
-    <Typography.Link
-      style={
-        {
-          marginTop: '20px',
-          fontSize: '20px'
-        }
-      }
-      href="https://www.elephahealth.com/"
-      target="_blank">
-      Раскройте Ваш потенциал ресурсного состояния
-    </Typography.Link>
   </>
 }
