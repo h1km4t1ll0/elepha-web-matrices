@@ -13,7 +13,7 @@ export const Matrix: FC<MatrixProps> = ({ matrix }) => {
     </>
 
   return <>
-    <Card className='matrixCard'>
+    <Card className='matrixCard' style={{minWidth: '300px'}}>
       <MatrixInfo matrix={matrix} />
       <AudioPlayer url={matrix.audioUrl} />
     </Card>
